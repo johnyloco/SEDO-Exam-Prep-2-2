@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    
+
     stages {
         stage('Checkout') {
             steps {
@@ -9,7 +9,7 @@ pipeline {
         }
 
 
-        stage('Restore Dependencies') {
+        stage('Restore Dependencies from the NuGet Package Manager') {
             steps {
                 bat 'dotnet restore'
             }
