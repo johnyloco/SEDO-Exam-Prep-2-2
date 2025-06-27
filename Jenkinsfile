@@ -8,8 +8,7 @@ pipeline {
             }
         }
 
-
-        stage('Restore Dependencies and Tools') {
+        stage('Restore Dependencies') {
             steps {
                 bat 'dotnet restore'
             }
