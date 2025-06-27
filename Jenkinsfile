@@ -9,7 +9,7 @@ pipeline {
         }
 
 
-        stage('Restore Dependencies from the NuGet Package Manager') {
+        stage('Restore Dependencies') {
             steps {
                 bat 'dotnet restore'
             }
